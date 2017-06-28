@@ -46,7 +46,7 @@ describe('Strategy', function() {
     });
 
     it('should be redirected', function() {
-      expect(url).to.equal('https://id.smt.docomo.ne.jp/cgi8/oidc/authorize?nonce=the_nonce&state=the_state&response_type=code&client_id=ABC123');
+      expect(url).to.equal('https://id.smt.docomo.ne.jp/cgi8/oidc/authorize?nonce=the_nonce&state=the_state&response_type=code&scope=openid&client_id=ABC123');
     });
   });
 
@@ -70,7 +70,7 @@ describe('Strategy', function() {
     });
 
     it('should be redirected', function() {
-      expect(url).to.match(/^https:\/\/id.smt.docomo.ne.jp\/cgi8\/oidc\/authorize\?nonce=[a-zA-Z0-9_]{32}&state=[a-zA-Z0-9_]{32}&response_type=code\&client_id=ABC123$/);
+      expect(url).to.match(/^https:\/\/id.smt.docomo.ne.jp\/cgi8\/oidc\/authorize\?nonce=[a-zA-Z0-9_]{32}&state=[a-zA-Z0-9_]{32}\&response_type=code\&scope=openid\&client_id=ABC123$/);
     });
   });
 });
