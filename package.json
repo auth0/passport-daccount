@@ -1,6 +1,6 @@
 {
   "name": "passport-daccount",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Docomo dAccount authentication strategy for Passport.",
   "keywords": [
     "passport",
