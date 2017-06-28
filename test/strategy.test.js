@@ -70,7 +70,7 @@ describe('Strategy', function() {
     });
 
     it('should be redirected', function() {
-      expect(url).to.match(/^https:\/\/id.smt.docomo.ne.jp\/cgi8\/oidc\/authorize\?nonce=[a-zA-Z0-9_]{32}&state=[a-zA-Z0-9_]{32}\&response_type=code\&scope=openid\&client_id=ABC123$/);
+      expect(url).to.match(/^https:\/\/id.smt.docomo.ne.jp\/cgi8\/oidc\/authorize\?nonce=[a-zA-Z0-9_-]{32}&state=[a-zA-Z0-9_-]{32}\&response_type=code\&scope=openid\&client_id=ABC123$/);
     });
   });
 });
